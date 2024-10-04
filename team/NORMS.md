@@ -1,0 +1,5 @@
+- everyone show up on time
+- communicate with the team as much as possible
+- start tickets early
+- ask for help if you need it
+- study Swift on your own to be better prepared
