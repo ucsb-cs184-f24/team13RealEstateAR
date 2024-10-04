@@ -1,0 +1,1 @@
+I'm an international student from India and a 3rd year CS major. I've wanted to learn iOS development for a while and want to work on something that I might actually put in my resume. Fun fact - one day I just woke up and decided I have a passion for CS in primary school :) 
