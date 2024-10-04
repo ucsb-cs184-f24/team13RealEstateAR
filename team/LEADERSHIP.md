@@ -1,3 +1,3 @@
-Product Owner: Leon Guo
-Scrum Master: Vedant Shah
-Scribe: Chris
+| Product Owner | Leo Guo     |
+| Scrum Master  | Vedant Shah |
+| Scribe        | Chris       |
