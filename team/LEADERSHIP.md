@@ -1,5 +1,5 @@
-| Product Owner | Leo Guo     |
-|---------------|-------------|
-| Scrum Master  | Vedant Shah |
-|---------------|-------------|
-| Scribe        | Chris       |
+| **Role**        | **Name**      |
+|-----------------|---------------|
+| Product Owner   | Leo Guo      |
+| Scrum Master    | Vedant Shah  |
+| Scribe          | Chris        |
