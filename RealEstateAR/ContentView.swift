@@ -18,6 +18,9 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
+            Text("Vedant Shah")
+                .font(.largeTitle)
+                .bold()
         }
     }
 
