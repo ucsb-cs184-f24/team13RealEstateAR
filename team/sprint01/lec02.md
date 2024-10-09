@@ -13,9 +13,9 @@ Vedant
 - trying to get street view pics; also try to learn Vision
 
 Angel
-- looking into Google Maps API
-- 
+- NA
+- looking into Google Maps API / getting pictures of houses
 
 Animesh
--
--
+- NA
+- Working with Apple location (seeing if we can find direction)
