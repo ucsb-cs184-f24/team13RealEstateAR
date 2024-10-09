@@ -1,6 +1,9 @@
 Attendance: Leo, Animesh, Vedant
 
 Created diagram and pipeline for application.
+Backup Plans:
+- Alternate: Rotational
+- Last Alterate: Zillow with new feature
 
 Leon: 
 - Tested Attom API
