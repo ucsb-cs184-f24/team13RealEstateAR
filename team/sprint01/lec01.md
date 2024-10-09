@@ -1,4 +1,4 @@
-Attendance: Chirs, Angel, Vedant, Animesh
+Attendance: Chirs, Angel, Vedant, Animesh, Leo
 
 **Chris**
   Progress: NA
@@ -16,7 +16,9 @@ Attendance: Chirs, Angel, Vedant, Animesh
   Progress: NA
   Todo: Hello World, learn swift
 
-
+**Leo**:
+  Progress: Tested the API
+  Todo: API endpoint & wireframe
 Everyone:
 - Thinking about features
 - Sketching potential UIs
