@@ -7,10 +7,13 @@
 
 import SwiftUI
 import CoreData
+import CoreLocation
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
-
+    
+    @StateObject private var locationManager = LocationManager()
+    
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
@@ -18,6 +21,20 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
+            if let locationStatus = locationManager.locationStatus {
+                switch locationStatus {
+                case .authorizedWhenInUse, .authorizedAlways:
+                    Text("Latitude: \(locationManager.userLatitude)")
+                    Text("Longitude: \(locationManager.userLongitude)")
+                    Text("Heading: \(locationManager.userHeading)")
+                case .denied:
+                    Text("Location access denied. Please enable location services in settings.")
+                case .notDetermined:
+                    Text("Requesting location access...")
+                default:
+                    Text("Location status unknown.")
+                }
+            }
         }
     }
 

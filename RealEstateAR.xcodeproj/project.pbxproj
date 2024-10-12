@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		221E2AE32CB9E62C009927C6 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221E2AE22CB9E313009927C6 /* LocationManager.swift */; };
 		3370D5AE2CB4F41800ADFCB1 /* RealEstateARApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3370D5AD2CB4F41800ADFCB1 /* RealEstateARApp.swift */; };
 		3370D5B02CB4F41800ADFCB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3370D5AF2CB4F41800ADFCB1 /* ContentView.swift */; };
 		3370D5B22CB4F41A00ADFCB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3370D5B12CB4F41A00ADFCB1 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		221E2AE22CB9E313009927C6 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		3370D5AA2CB4F41800ADFCB1 /* RealEstateAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealEstateAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3370D5AD2CB4F41800ADFCB1 /* RealEstateARApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateARApp.swift; sourceTree = "<group>"; };
 		3370D5AF2CB4F41800ADFCB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				3370D5AF2CB4F41800ADFCB1 /* ContentView.swift */,
 				3370D5B12CB4F41A00ADFCB1 /* Assets.xcassets */,
 				3370D5B62CB4F41A00ADFCB1 /* Persistence.swift */,
+				221E2AE22CB9E313009927C6 /* LocationManager.swift */,
 				3370D5B82CB4F41A00ADFCB1 /* RealEstateAR.xcdatamodeld */,
 				3370D5B32CB4F41A00ADFCB1 /* Preview Content */,
 			);
@@ -145,6 +148,7 @@
 			files = (
 				3370D5B72CB4F41A00ADFCB1 /* Persistence.swift in Sources */,
 				3370D5B02CB4F41800ADFCB1 /* ContentView.swift in Sources */,
+				221E2AE32CB9E62C009927C6 /* LocationManager.swift in Sources */,
 				3370D5BA2CB4F41A00ADFCB1 /* RealEstateAR.xcdatamodeld in Sources */,
 				3370D5AE2CB4F41800ADFCB1 /* RealEstateARApp.swift in Sources */,
 			);
@@ -283,6 +287,7 @@
 				DEVELOPMENT_TEAM = J9Q34BYMQY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires access to your location to show nearby properties";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -312,6 +317,7 @@
 				DEVELOPMENT_TEAM = J9Q34BYMQY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires access to your location to show nearby properties";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
