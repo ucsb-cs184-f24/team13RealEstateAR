@@ -11,17 +11,27 @@
 
 ## Interaction with ios_platform channel:
 
-- `participant 1`: Animesh `Interaction`: shared a tutorial video for SwiftUI in #platform_ios `Link`: https://ucsb-cs184-f24.slack.com/archives/C07S2MBP92L/p1728939555207769
+`participant 1`: Animesh 
+- `Interaction`: shared a tutorial video for SwiftUI in #platform_ios 
+- `Link`: https://ucsb-cs184-f24.slack.com/archives/C07S2MBP92L/p1728939555207769
 
-- `participant 2`: Leo `Interaction`: shared a ARkit developer guide and ATTOM API in #platform_ios `Link 1`: https://ucsb-cs184-f24.slack.com/archives/C07S2MBP92L/p1728951501089619 `Link 2`: https://ucsb-cs184-f24.slack.com/archives/C07S2MBP92L/p1728951672590279
+`participant 2`: Leo 
+- `Interaction`: shared a ARkit developer guide and ATTOM API in #platform_ios
+- `Link 1`: https://ucsb-cs184-f24.slack.com/archives/C07S2MBP92L/p1728951501089619
+- `Link 2`: https://ucsb-cs184-f24.slack.com/archives/C07S2MBP92L/p1728951672590279
 
-- `participant 3`: Chris `Interaction`: shared a guide to coreML AI models that can be applied in iOS programming in #platform_ios `Link`: https://ucsb-cs184-f24.slack.com/archives/C07S2MBP92L/p1728951835477309
+`participant 3`: Chris 
+- `Interaction`: shared a guide to coreML AI models that can be applied in iOS programming in #platform_ios
+- `Link`: https://ucsb-cs184-f24.slack.com/archives/C07S2MBP92L/p1728951835477309
 
-- `participant 4`: Angel `Interaction`: shared a Google Maps API for getting the static street view of an address in #platform_ios `Link`: https://ucsb-cs184-f24.slack.com/archives/C07S2MBP92L/p1728952588067859
+`participant 4`: Angel 
+- `Interaction`: shared a Google Maps API for getting the static street view of an address in #platform_ios
+- `Link`: https://ucsb-cs184-f24.slack.com/archives/C07S2MBP92L/p1728952588067859
 
 ## List of Impressions
 
  Benefit: 
  - We used python for backend so we can handle API calls more easily & have better integration with the vision model
+
 Challenge:
 - Need to figure out how to make python scripts & models communicate with swift project
