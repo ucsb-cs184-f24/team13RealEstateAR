@@ -27,6 +27,7 @@ struct ContentView: View {
                     Text("Latitude: \(locationManager.userLatitude)")
                     Text("Longitude: \(locationManager.userLongitude)")
                     Text("Heading: \(locationManager.userHeading)")
+                    Text("Address: \(locationManager.userAddress)") // Display the address here
                 case .denied:
                     Text("Location access denied. Please enable location services in settings.")
                 case .notDetermined:
