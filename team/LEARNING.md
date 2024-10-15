@@ -35,16 +35,23 @@
 - `Link`: https://ucsb-cs184-f24.slack.com/archives/C07S2MBP92L/p1729017918860479
 - `Link2`: https://ucsb-cs184-f24.slack.com/archives/C07S2MBP92L/p1729027686509739
 
+`participant 5`: Veadnt
+- `Interaction`: liked video on how to impelemnt SwiftUI within application
+- `Link`: https://ucsb-cs184-f24.slack.com/archives/C07S2MBP92L/p1728668188367669
+
+
 ## List of Impressions
 
  Benefit: 
  - We used python for backend so we can handle API calls more easily & have better integration with the vision model
  - Auth0.swift is secure and easy for user if we need passwordless access and Single sign on functionality
  - AWS cognito is easier for development and user info storage with AWS functionality enabled
+ - ARKit will simlify a lot of the graphics that we will have to code, making it easier to for us to create the 3D objects without too much math
 
 Challenge:
 - Need to figure out how to make python scripts & models communicate with swift project
 - Auth0.swift is less developer intuitive in terms of cloud storage development plus cost a lot
  - AWS cognito is less as specialized or flexible as Auth0 for advanced identity features (e.g., bot detection, breached password detection)
+ - iOS is very restricitive, which might make it difficult to work with tools and models that aren't already integrated into the system
 
 
