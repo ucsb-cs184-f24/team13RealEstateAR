@@ -21,6 +21,7 @@
 
 ## List of Impressions
 
-Leo: 
-- Benefit: We used python for backend so we can handle API calls more easily & have better integration with the vision model
-- Challenge: Need to figure out how to make python scripts & models communicate with swift project
+ Benefit: 
+ - We used python for backend so we can handle API calls more easily & have better integration with the vision model
+Challenge:
+- Need to figure out how to make python scripts & models communicate with swift project
