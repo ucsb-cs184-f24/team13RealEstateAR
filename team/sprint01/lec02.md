@@ -19,3 +19,7 @@ Angel
 Animesh
 - NA
 - Working with Apple location (seeing if we can find direction)
+
+Zephyr
+- NA
+- Looking into Attom API, try to get into repo

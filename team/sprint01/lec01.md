@@ -19,6 +19,10 @@ Attendance: Chirs, Angel, Vedant, Animesh, Leo
 **Leo**:
   Progress: Tested the API
   Todo: API endpoint & wireframe
+
+**Zephyr**:
+  Progress: NA
+  Todo: Build hello word swift app
 Everyone:
 - Thinking about features
 - Sketching potential UIs

@@ -19,3 +19,7 @@ Chris
 Angel
 - NA
 - Looking over Google Maps API to find the street screenshots
+
+Zephyr
+- NA
+- looking into Attom API, get into repo
