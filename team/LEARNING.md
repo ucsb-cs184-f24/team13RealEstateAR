@@ -7,6 +7,7 @@
 
 - Angel - I have no prior IOS development experience but I have been looking into and learning Swift. I have some experience with scrum methodology and working with a team.
 
+<<<<<<< Updated upstream
 - Vedant - I have learned a little bit of Swift and iOS. I'm looking forward to improve my iOS and Swift skills this quarter. Also, I'm hoping to learn how to use and implement computer vision models.
 
 ## Interaction with ios_platform channel:
@@ -35,3 +36,8 @@
 
 Challenge:
 - Need to figure out how to make python scripts & models communicate with swift project
+=======
+Vedant - I have learned a little bit of Swift and iOS. I'm looking forward to improve my iOS and Swift skills this quarter. Also, I'm hoping to learn how to use and implement computer vision models.
+
+Zephyr - I love to learn more about Swift and AR mobile coding. Previously I had built Violett.com (feel free to play around with our user portal) for my company and mobile app version with Flutter with Bluetooth registration and tested on IOS. I also had experience in Android Java development. I've also interned at Appfolio(the property management company) building renter's insurance pages thus had a great interest in realstate.
+>>>>>>> Stashed changes
