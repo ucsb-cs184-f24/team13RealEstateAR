@@ -1,4 +1,5 @@
-# This is a AR-Enhanced Smart Property Information Explorer
+# RealEstateAR
+## This is a AR-Enhanced Smart Property Information Explorer
 ## Team Members: (Alphabetical Order) ##
 | Name             | Github ID           |
 | ---------------- | ------------------- |
