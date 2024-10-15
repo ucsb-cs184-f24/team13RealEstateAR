@@ -7,8 +7,9 @@
 
 - Angel - I have no prior IOS development experience but I have been looking into and learning Swift. I have some experience with scrum methodology and working with a team.
 
-<<<<<<< Updated upstream
 - Vedant - I have learned a little bit of Swift and iOS. I'm looking forward to improve my iOS and Swift skills this quarter. Also, I'm hoping to learn how to use and implement computer vision models.
+
+- Zephyr - I love to learn more about Swift and AR mobile coding. Previously I had built Violett.com (feel free to play around with our user portal) for my company and mobile app version with Flutter with Bluetooth registration and tested on IOS. I also had experience in Android Java development. I've also interned at Appfolio(the property management company) building renter's insurance pages thus had a great interest in realstate.
 
 ## Interaction with ios_platform channel:
 
@@ -29,15 +30,21 @@
 - `Interaction`: shared a Google Maps API for getting the static street view of an address in #platform_ios
 - `Link`: https://ucsb-cs184-f24.slack.com/archives/C07S2MBP92L/p1728952588067859
 
+`participant 5`: Zephyr
+- `Interaction`: shared a guide for creating authentication interface with Auth0.swift/aws backend in #platform_ios
+- `Link`: https://ucsb-cs184-f24.slack.com/archives/C07S2MBP92L/p1729017918860479
+- `Link2`: https://ucsb-cs184-f24.slack.com/archives/C07S2MBP92L/p1729027686509739
+
 ## List of Impressions
 
  Benefit: 
  - We used python for backend so we can handle API calls more easily & have better integration with the vision model
+ - Auth0.swift is secure and easy for user if we need passwordless access and Single sign on functionality
+ - AWS cognito is easier for development and user info storage with AWS functionality enabled
 
 Challenge:
 - Need to figure out how to make python scripts & models communicate with swift project
-=======
-Vedant - I have learned a little bit of Swift and iOS. I'm looking forward to improve my iOS and Swift skills this quarter. Also, I'm hoping to learn how to use and implement computer vision models.
+- Auth0.swift is less developer intuitive in terms of cloud storage development plus cost a lot
+ - AWS cognito is less as specialized or flexible as Auth0 for advanced identity features (e.g., bot detection, breached password detection)
 
-Zephyr - I love to learn more about Swift and AR mobile coding. Previously I had built Violett.com (feel free to play around with our user portal) for my company and mobile app version with Flutter with Bluetooth registration and tested on IOS. I also had experience in Android Java development. I've also interned at Appfolio(the property management company) building renter's insurance pages thus had a great interest in realstate.
->>>>>>> Stashed changes
+
