@@ -35,7 +35,7 @@
 - `Link`: https://ucsb-cs184-f24.slack.com/archives/C07S2MBP92L/p1729017918860479
 - `Link2`: https://ucsb-cs184-f24.slack.com/archives/C07S2MBP92L/p1729027686509739
 
-`participant 5`: Veadnt
+`participant 6`: Veadnt
 - `Interaction`: liked video on how to impelemnt SwiftUI within application
 - `Link`: https://ucsb-cs184-f24.slack.com/archives/C07S2MBP92L/p1728668188367669
 
