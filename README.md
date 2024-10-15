@@ -1,5 +1,6 @@
 # RealEstateAR
-## This is a AR-Enhanced Smart Property Information Explorer
+This is a AR-Enhanced Smart Property Information Explorer.
+
 ## Team Members: (Alphabetical Order) ##
 | Name             | Github ID           |
 | ---------------- | ------------------- |
@@ -13,6 +14,8 @@
 
 ## Descriptions: ##
 **Tech Stack**: 
+- IOS platform
+- `Language`: Swift, Python
 - ___ for the frontend
 - ___ for backend
 - ___ for database
