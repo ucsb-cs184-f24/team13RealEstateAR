@@ -9,7 +9,7 @@ Angel - I have no prior IOS development experience but I have been looking into 
 
 Vedant - I have learned a little bit of Swift and iOS. I'm looking forward to improve my iOS and Swift skills this quarter. Also, I'm hoping to learn how to use and implement computer vision models.
 
-## Interaction with help channel:
+## Interaction with ios_platform channel:
 
 - `participant 1`: Animesh `Interaction`: shared a tutorial video for SwiftUI in #platform_ios `Link`: https://ucsb-cs184-f24.slack.com/archives/C07S2MBP92L/p1728939555207769
 
