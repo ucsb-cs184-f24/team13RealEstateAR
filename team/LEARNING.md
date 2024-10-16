@@ -55,4 +55,5 @@ Challenge:
  - AWS cognito is less as specialized or flexible as Auth0 for advanced identity features (e.g., bot detection, breached password detection)
  - iOS is very restricitive, which might make it difficult to work with tools and models that aren't already integrated into the system
 
-
+App type/Tech stack:
+iOS app with SwiftUI for frontend, Swift and Python for backend, PyTorch and CoreML for computer vision
