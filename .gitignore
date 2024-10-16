@@ -84,3 +84,4 @@ yarn-error.log*
 .idea
 __pycache__
 venv
+**/.env
