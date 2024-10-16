@@ -41,7 +41,7 @@
 
 
 ## List of Impressions
-
+time stamp: October 15th, 2024
  Benefit: 
  - We used python for backend so we can handle API calls more easily & have better integration with the vision model
  - Auth0.swift is secure and easy for user if we need passwordless access and Single sign on functionality
