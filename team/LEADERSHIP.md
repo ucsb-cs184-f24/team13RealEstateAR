@@ -6,7 +6,7 @@ Week 1 - Sprint Planning
 | Scrum Master    | Vedant Shah  |
 | Scribe          | Chris        |
 
-Week 3 - Retrospective Meeting
+Oct. 16, 2024 - Retrospective Meeting/Sprint Planning Meetings
 | **Role**        | **Name**      |
 |-----------------|---------------|
 | Product Owner   | Leo Guo      |
