@@ -16,14 +16,16 @@ This is a AR-Enhanced Smart Property Information Explorer.
 **Tech Stack**: 
 - IOS platform
 - `Language`: Swift, Python
-- ___ for the frontend
-- ___ for backend
-- ___ for database
+- SwiftUI for the frontend
+- Swift for backend
+- Firebase for database
 
 
 **Paragraph Description**:
 The app is geared towards potential home buyers where the user can get instant details about a house that they’re interested in buying. Upon opening the app, the user points the camera towards the house of interest, the app then gets the user's coordinates (using Core Location) which we use to get an image of the house using Google Map's static street view API. It then uses a model to compare the user image and the Google image to ensure that the correct listing details are displayed. Some of the information that will be displayed via AR includes the listing price, number of bedrooms and bathrooms, and the owners. 
 
+## User Roles ##
+- House Hunters: People looking for information on houses to buy in a neighborhood; our app will provide them a way to see the prices of a house that they point their phone at
 
 ## APIs ##
 * ATTOM API: property information
