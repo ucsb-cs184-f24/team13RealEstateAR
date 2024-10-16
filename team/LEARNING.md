@@ -42,7 +42,8 @@
 
 ## List of Impressions
 time stamp: October 15th, 2024
- Benefit: 
+
+Benefit: 
  - We used python for backend so we can handle API calls more easily & have better integration with the vision model
  - Auth0.swift is secure and easy for user if we need passwordless access and Single sign on functionality
  - AWS cognito is easier for development and user info storage with AWS functionality enabled
