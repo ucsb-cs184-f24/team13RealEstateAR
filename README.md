@@ -20,8 +20,9 @@ This is a AR-Enhanced Smart Property Information Explorer.
 - ___ for backend
 - ___ for database
 
+
 **Paragraph Description**:
-The app is geared towards potential home buyers where the user can get instant details about a house that they’re interested in buying. Upon opening the app, the user points the camera towards the house of interest, the app then gets the address using coordinates and computer vision to ensure that the correct listing details are displayed to the user. Some of the information that will be displayed via AR includes the listing price, number of bedrooms and bathrooms, and the owners. 
+The app is geared towards potential home buyers where the user can get instant details about a house that they’re interested in buying. Upon opening the app, the user points the camera towards the house of interest, the app then gets the user's coordinates (using Core Location) which we use to get an image of the house using Google Map's static street view API. It then uses a model to compare the user image and the Google image to ensure that the correct listing details are displayed. Some of the information that will be displayed via AR includes the listing price, number of bedrooms and bathrooms, and the owners. 
 
 
 ## APIs ##
