@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		221E2B192CBF4129009927C6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 221E2B182CBF4129009927C6 /* FirebaseAnalytics */; };
+		221E2B1B2CBF4129009927C6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 221E2B1A2CBF4129009927C6 /* FirebaseAuth */; };
+		221E2B1D2CBF4129009927C6 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 221E2B1C2CBF4129009927C6 /* FirebaseCore */; };
+		221E2B1F2CBF4129009927C6 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 221E2B1E2CBF4129009927C6 /* FirebaseCrashlytics */; };
+		221E2B212CBF4129009927C6 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 221E2B202CBF4129009927C6 /* FirebaseDatabase */; };
+		221E2B232CBF4129009927C6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 221E2B222CBF4129009927C6 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		2262DD602CB500BB0012C47F /* hello-world.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hello-world.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +32,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				221E2B212CBF4129009927C6 /* FirebaseDatabase in Frameworks */,
+				221E2B192CBF4129009927C6 /* FirebaseAnalytics in Frameworks */,
+				221E2B1F2CBF4129009927C6 /* FirebaseCrashlytics in Frameworks */,
+				221E2B1D2CBF4129009927C6 /* FirebaseCore in Frameworks */,
+				221E2B1B2CBF4129009927C6 /* FirebaseAuth in Frameworks */,
+				221E2B232CBF4129009927C6 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,12 @@
 			);
 			name = "hello-world";
 			packageProductDependencies = (
+				221E2B182CBF4129009927C6 /* FirebaseAnalytics */,
+				221E2B1A2CBF4129009927C6 /* FirebaseAuth */,
+				221E2B1C2CBF4129009927C6 /* FirebaseCore */,
+				221E2B1E2CBF4129009927C6 /* FirebaseCrashlytics */,
+				221E2B202CBF4129009927C6 /* FirebaseDatabase */,
+				221E2B222CBF4129009927C6 /* FirebaseFirestore */,
 			);
 			productName = "hello-world";
 			productReference = 2262DD602CB500BB0012C47F /* hello-world.app */;
@@ -94,6 +115,9 @@
 			);
 			mainGroup = 2262DD572CB500BB0012C47F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				221E2B172CBF4129009927C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2262DD612CB500BB0012C47F /* Products */;
 			projectDirPath = "";
@@ -250,6 +274,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"hello-world/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Test App";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -258,8 +283,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -287,6 +311,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"hello-world/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Test App";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -295,8 +320,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -335,6 +359,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		221E2B172CBF4129009927C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		221E2B182CBF4129009927C6 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 221E2B172CBF4129009927C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		221E2B1A2CBF4129009927C6 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 221E2B172CBF4129009927C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		221E2B1C2CBF4129009927C6 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 221E2B172CBF4129009927C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		221E2B1E2CBF4129009927C6 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 221E2B172CBF4129009927C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		221E2B202CBF4129009927C6 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 221E2B172CBF4129009927C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		221E2B222CBF4129009927C6 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 221E2B172CBF4129009927C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2262DD582CB500BB0012C47F /* Project object */;
 }
