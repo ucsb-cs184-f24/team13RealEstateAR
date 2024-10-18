@@ -13,7 +13,7 @@ Oct. 16, 2024 - Retrospective Meeting/Sprint Planning Meetings
 | Scrum Master    | Vedant Shah  |
 | Scribe          | Chris        |
 | Retro Leader    | Angel Gutierrez |
-| Video Editor    | Zephyr Zhou  |
+| Video Editor   | Zephyr Zhou  |
 
 | Date      | Name              | Activity
 |-----------|-------------------|--------------------------------------------
