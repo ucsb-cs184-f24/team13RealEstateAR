@@ -38,9 +38,7 @@ The app is geared towards potential home buyers where the user can get instant d
 
 Here’s a structured outline of the roles and permissions for your app, considering the requirements and potential for user-contributed content:
 
-**Permissions**
-
----
+## Permissions ##
 
 #### 1. House Hunters
 
@@ -61,8 +59,6 @@ Individuals seeking information about houses available for purchase in a neighbo
 - The app provides real-time price data and property details through AR technology.
 - Users can save and annotate their findings for easy reference later.
 
----
-
 #### 2. Market Researcher
 
 **Role Description:**  
@@ -80,8 +76,6 @@ Researchers looking to gather price and mortgage information for analysis and ma
 **How the App Helps:**
 - The app provides multi-dimensional property information, allowing researchers to conduct in-depth analysis.
 - Data visualization tools to see trends and patterns clearly.
-
----
 
 #### 3. House Seller
 
@@ -102,8 +96,6 @@ Individuals looking to sell their houses and needing information about property 
 - The app aggregates average property prices in their area, enabling sellers to price their homes competitively.
 - Provides comparison tools to analyze similar properties effectively.
 
----
-
 ### User Authentication
 
 Given the potential for inappropriate content, consider implementing user authentication:
@@ -111,5 +103,3 @@ Given the potential for inappropriate content, consider implementing user authen
 - **Restricted Access:** Limit certain functionalities to users with a valid @ucsb.edu email address.
 - **Content Moderation:** Implement a reporting system for inappropriate content and a review process to ensure a safe user experience.
 - **Profile Verification:** Offer options for users to verify their profiles to enhance trust and accountability in the community.
-
----
