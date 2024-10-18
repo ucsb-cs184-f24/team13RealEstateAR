@@ -1,23 +1,27 @@
 # Date of Retrospective: 10/20/23
 
 * Led by: Angel Gutierrez
-* Present: Chris Riney, name2, ... , nameN
-* Absent: name1, name2, ...
+* Present: Chris Riney, Vedant Shah, Animesh Sachan, Xuanhe Zhou, Leo Guo, Angel Gutierrez
+* Absent: No
 
 ## Action item
 
 * a goal: 
-    - identify the pipeline we need for connecting everyone's work
-    - figure out what we need to do for storage
+    - Documenting progress among the team
+    - Improve branch management
+    - Team needs to start dressing better
 * a change:
-    - figure out CI/CD intergration plans
-    - pair programming scheduling
+    - Log progress we've made in an MD file
+    - Follow good practice, delete branches we're not using, merge things when it makes sense, name branches descriptively
+    - Of clothing
 * a measurement: 
-    - the completion of minimum product with user interface, data pipeline, CI/CD setting up
+    - The amount of documentation markdown files we have
+    - The amount of unneeded branches we have
+    - Amount of times Chris mentions other members' clothing
 
 ## Optional
 
-* Record anything else you think the team might want to remember from this retro
+* Animesh is wearing a particularly nice shirt today, and I'd like to remember it
 
 
 ## Retro Assessment
