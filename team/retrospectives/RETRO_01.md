@@ -1,7 +1,7 @@
 # Date of Retrospective: 10/20/23
 
 * Led by: Angel Gutierrez
-* Present: name1, name2, ... , nameN
+* Present: Chris Riney, name2, ... , nameN
 * Absent: name1, name2, ...
 
 ## Action item
