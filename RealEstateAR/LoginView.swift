@@ -1,12 +1,8 @@
-//
-//  LoginView.swift
-//  RealEstateAR
-//
-//  Created by Vedant Shah on 10/15/24.
-//
-
-import Foundation
 import SwiftUI
+import GoogleSignIn
+import FirebaseCore
+import FirebaseAuth
+import Firebase
 
 struct LoginView: View {
     @Environment(\.managedObjectContext) private var viewContext
@@ -21,19 +17,60 @@ struct LoginView: View {
             Text("AR Realtor")
                 .font(.largeTitle)
         }
-        
-        Button(action: signIn) {
-            Image("google") // Use the name of your custom image
+        VStack(spacing: 50) {
+            HStack{
+                Text("Sign in with ")
+                Button(action: signInWithGoogle) {
+                    Image("google") // Use the name of your custom image
+                        .resizable()
+                        .frame(width: 50, height: 50) // Adjust the size of the image
+                }
+            }
+            Image(systemName: "building")
                 .resizable()
-                .frame(width: 50, height: 50) // Adjust the size of the image
+                .frame(width: 80, height: 120)
+                .aspectRatio(contentMode: .fit)
         }
     }
     
-    private func signIn() {
-        
-    }
-}
+    
+    func signInWithGoogle() {
+        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
 
-#Preview {
-    LoginView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        // Create Google Sign In configuration object.
+        let config = GIDConfiguration(clientID: clientID)
+
+        // Start the sign-in flow using the root view controller.
+        GIDSignIn.sharedInstance.signIn(withPresenting: getRootViewController()) { result, error in
+            guard error == nil else {
+                print("Error during Google Sign-In: \(error!.localizedDescription)")
+                return
+            }
+
+            guard let user = result?.user,
+                  let idToken = user.idToken?.tokenString else {
+                print("Error: Failed to get user or token.")
+                return
+            }
+
+            let credential = GoogleAuthProvider.credential(withIDToken: idToken,
+                                                           accessToken: user.accessToken.tokenString)
+
+            // Sign in to Firebase with the credential
+            Auth.auth().signIn(with: credential) { result, error in
+                if let error = error {
+                    print("Firebase Auth error: \(error.localizedDescription)")
+                } else {
+                    print("Signed in with Google successfully")
+                }
+            }
+        }
+    }
+
+
+
+
+    func getRootViewController() -> UIViewController {
+        return UIApplication.shared.windows.first?.rootViewController ?? UIViewController()
+    }
 }

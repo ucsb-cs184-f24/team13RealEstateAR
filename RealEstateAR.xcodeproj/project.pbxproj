@@ -14,6 +14,12 @@
 		3370D5B72CB4F41A00ADFCB1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3370D5B62CB4F41A00ADFCB1 /* Persistence.swift */; };
 		3370D5BA2CB4F41A00ADFCB1 /* RealEstateAR.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3370D5B82CB4F41A00ADFCB1 /* RealEstateAR.xcdatamodeld */; };
 		33C040092CBF59AF00ED2053 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C040082CBF59AF00ED2053 /* LoginView.swift */; };
+		33C0400F2CC0690900ED2053 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 33C0400E2CC0690900ED2053 /* FirebaseAuth */; };
+		33C040112CC0690900ED2053 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 33C040102CC0690900ED2053 /* FirebaseCore */; };
+		33C040132CC0690900ED2053 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 33C040122CC0690900ED2053 /* FirebaseFirestore */; };
+		33C040162CC32E2300ED2053 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 33C040152CC32E2300ED2053 /* GoogleSignIn */; };
+		33C040182CC32E2300ED2053 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 33C040172CC32E2300ED2053 /* GoogleSignInSwift */; };
+		33C0401A2CC3398600ED2053 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33C040192CC3398600ED2053 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +31,8 @@
 		3370D5B62CB4F41A00ADFCB1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		3370D5B92CB4F41A00ADFCB1 /* RealEstateAR.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RealEstateAR.xcdatamodel; sourceTree = "<group>"; };
 		33C040082CBF59AF00ED2053 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		33C0400B2CBF5F1900ED2053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		33C040192CC3398600ED2053 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +40,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33C040182CC32E2300ED2053 /* GoogleSignInSwift in Frameworks */,
+				33C040112CC0690900ED2053 /* FirebaseCore in Frameworks */,
+				33C040162CC32E2300ED2053 /* GoogleSignIn in Frameworks */,
+				33C0400F2CC0690900ED2053 /* FirebaseAuth in Frameworks */,
+				33C040132CC0690900ED2053 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +70,8 @@
 		3370D5AC2CB4F41800ADFCB1 /* RealEstateAR */ = {
 			isa = PBXGroup;
 			children = (
+				33C0400B2CBF5F1900ED2053 /* Info.plist */,
+				33C040192CC3398600ED2053 /* GoogleService-Info.plist */,
 				3370D5AD2CB4F41800ADFCB1 /* RealEstateARApp.swift */,
 				3370D5AF2CB4F41800ADFCB1 /* ContentView.swift */,
 				33C040082CBF59AF00ED2053 /* LoginView.swift */,
@@ -92,6 +107,13 @@
 			dependencies = (
 			);
 			name = RealEstateAR;
+			packageProductDependencies = (
+				33C0400E2CC0690900ED2053 /* FirebaseAuth */,
+				33C040102CC0690900ED2053 /* FirebaseCore */,
+				33C040122CC0690900ED2053 /* FirebaseFirestore */,
+				33C040152CC32E2300ED2053 /* GoogleSignIn */,
+				33C040172CC32E2300ED2053 /* GoogleSignInSwift */,
+			);
 			productName = RealEstateAR;
 			productReference = 3370D5AA2CB4F41800ADFCB1 /* RealEstateAR.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +142,10 @@
 				Base,
 			);
 			mainGroup = 3370D5A12CB4F41800ADFCB1;
+			packageReferences = (
+				33C0400A2CBF5E5100ED2053 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				33C040142CC32E2300ED2053 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = 3370D5AB2CB4F41800ADFCB1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -136,6 +162,7 @@
 			files = (
 				3370D5B52CB4F41A00ADFCB1 /* Preview Assets.xcassets in Resources */,
 				3370D5B22CB4F41A00ADFCB1 /* Assets.xcassets in Resources */,
+				33C0401A2CC3398600ED2053 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +314,7 @@
 				DEVELOPMENT_TEAM = J9Q34BYMQY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RealEstateAR/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -316,6 +344,7 @@
 				DEVELOPMENT_TEAM = J9Q34BYMQY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RealEstateAR/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -356,6 +385,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		33C0400A2CBF5E5100ED2053 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.3.0;
+			};
+		};
+		33C040142CC32E2300ED2053 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		33C0400E2CC0690900ED2053 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33C0400A2CBF5E5100ED2053 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		33C040102CC0690900ED2053 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33C0400A2CBF5E5100ED2053 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		33C040122CC0690900ED2053 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33C0400A2CBF5E5100ED2053 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		33C040152CC32E2300ED2053 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33C040142CC32E2300ED2053 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		33C040172CC32E2300ED2053 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33C040142CC32E2300ED2053 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		3370D5B82CB4F41A00ADFCB1 /* RealEstateAR.xcdatamodeld */ = {
