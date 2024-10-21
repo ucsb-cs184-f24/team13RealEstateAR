@@ -1,0 +1,25 @@
+Attendance: All
+
+Leo
+- Created pipeline triggered by button; can now pass user address to get house ID
+- working on hw02
+
+Animesh
+- doing
+- Working on app UI for various pages
+
+Angel
+- Worked with chris on streetView Dataset
+- Work with Chris on getting houses in a radius
+
+Zephyr
+- Brainstormed new ideas for UI
+- working on navigation for hw02
+
+Chris
+- organized code; prepared code from training; made dataclass for exporting model to ONNX; dataclas for passign arguements
+- working on creating dataset pipeline; class that concverts address to coordinates to image; then start writing training code
+
+Vedant
+- got google oAuth working; made minimalistic navigation; made cameraView using sceneView
+- working on computer vision model to recognize houses; can do AR stuff after
