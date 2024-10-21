@@ -19,14 +19,14 @@ struct LoginView: View {
         } else {
             VStack(spacing: 50) {
                 VStack{
-                    Text("AR Realtor")
+                    Text("AR RealEstate Assistant")
                         .font(.largeTitle)
                     HStack{
                         Text("Sign in with ")
                         Button(action: signInWithGoogle) {
-                            Image("google") // Use the name of your custom image
+                            Image("google")
                                 .resizable()
-                                .frame(width: 50, height: 50) // Adjust the size of the image
+                                .frame(width: 50, height: 50) 
                         }
                     }
                 }
@@ -69,7 +69,7 @@ struct LoginView: View {
                     print("Firebase Auth error: \(error.localizedDescription)")
                 } else {
                     self.isAuthenticated = true
-                    print("Signed in with Google successfully")
+                    print("User Signed successfully with their google account")
                 }
             }
         }

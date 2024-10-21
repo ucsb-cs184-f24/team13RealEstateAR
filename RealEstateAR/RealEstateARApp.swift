@@ -1,13 +1,9 @@
+//  Created by LeoGuo on 10/21/24.
 //
-//  RealEstateARApp.swift
-//  RealEstateAR
-//
-//  Created by Vedant Shah on 10/7/24.
-//
-
+import GoogleSignIn
 import SwiftUI
 import Firebase
-import GoogleSignIn
+
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     

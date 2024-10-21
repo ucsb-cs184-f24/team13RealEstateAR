@@ -22,6 +22,7 @@
 		33C040162CC32E2300ED2053 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 33C040152CC32E2300ED2053 /* GoogleSignIn */; };
 		33C040182CC32E2300ED2053 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 33C040172CC32E2300ED2053 /* GoogleSignInSwift */; };
 		33C0401A2CC3398600ED2053 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33C040192CC3398600ED2053 /* GoogleService-Info.plist */; };
+		947DCAC92CC714BC006C668A /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947DCAC82CC714B1006C668A /* About.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		33C040082CBF59AF00ED2053 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		33C0400B2CBF5F1900ED2053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		33C040192CC3398600ED2053 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		947DCAC82CC714B1006C668A /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		3370D5AC2CB4F41800ADFCB1 /* RealEstateAR */ = {
 			isa = PBXGroup;
 			children = (
+				947DCAC82CC714B1006C668A /* About.swift */,
 				33C0400B2CBF5F1900ED2053 /* Info.plist */,
 				33C040192CC3398600ED2053 /* GoogleService-Info.plist */,
 				3370D5AD2CB4F41800ADFCB1 /* RealEstateARApp.swift */,
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3370D5B72CB4F41A00ADFCB1 /* Persistence.swift in Sources */,
+				947DCAC92CC714BC006C668A /* About.swift in Sources */,
 				33492C0A2CC6E1E10079C5F6 /* CameraView.swift in Sources */,
 				3370D5B02CB4F41800ADFCB1 /* ContentView.swift in Sources */,
 				3370D5BA2CB4F41A00ADFCB1 /* RealEstateAR.xcdatamodeld in Sources */,

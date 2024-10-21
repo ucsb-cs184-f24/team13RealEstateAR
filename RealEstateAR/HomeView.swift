@@ -2,8 +2,7 @@
 //  HomeView.swift
 //  RealEstateAR
 //
-//  Created by Vedant Shah on 10/21/24.
-//
+
 
 import SwiftUI
 import FirebaseCore
@@ -19,8 +18,9 @@ struct HomeView: View {
                 Text("Hello \(name)")
                     .font(.largeTitle)
                 
-                NavigationLink(destination: CameraView()) {
-                    Text("Go to Camera")
+                // Updated NavigationLink to go to AboutView instead of CameraView
+                NavigationLink(destination: AboutView()) {
+                    Text("Go to About Page")
                         .font(.headline)
                         .padding()
                         .background(Color.blue)
