@@ -18,14 +18,16 @@ struct LoginView: View {
             HomeView()
         } else {
             VStack(spacing: 50) {
-                Text("AR Realtor")
-                    .font(.largeTitle)
-                HStack{
-                    Text("Sign in with ")
-                    Button(action: signInWithGoogle) {
-                        Image("google") // Use the name of your custom image
-                            .resizable()
-                            .frame(width: 50, height: 50) // Adjust the size of the image
+                VStack{
+                    Text("AR Realtor")
+                        .font(.largeTitle)
+                    HStack{
+                        Text("Sign in with ")
+                        Button(action: signInWithGoogle) {
+                            Image("google") // Use the name of your custom image
+                                .resizable()
+                                .frame(width: 50, height: 50) // Adjust the size of the image
+                        }
                     }
                 }
                 Image(systemName: "building")

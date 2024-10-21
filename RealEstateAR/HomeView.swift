@@ -14,7 +14,22 @@ struct HomeView: View {
     @State private var name = Auth.auth().currentUser?.displayName ?? "Unknown"
     
     var body: some View {
-        Text("Hello \(name)")
+        NavigationView {
+            VStack {
+                Text("Hello \(name)")
+                    .font(.largeTitle)
+                
+                NavigationLink(destination: CameraView()) {
+                    Text("Go to Camera")
+                        .font(.headline)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+            }
+            .navigationTitle("Home")
+        }
     }
 }
 
