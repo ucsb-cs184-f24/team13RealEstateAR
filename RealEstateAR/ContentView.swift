@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  RealEstateAR
 //
-//  Created by Vedant Shah on 10/7/24.
+//  Created by Leo Guo on 10/21/24.
 //
 
 import SwiftUI
