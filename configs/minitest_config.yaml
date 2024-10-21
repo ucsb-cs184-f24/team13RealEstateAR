@@ -1,0 +1,4 @@
+model_name: mobilenetv3_large_100
+similarity_fn: cosine_similarity
+add_layer: True
+use_logits: True

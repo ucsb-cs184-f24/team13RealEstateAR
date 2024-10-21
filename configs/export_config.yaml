@@ -1,0 +1,13 @@
+# Model
+model_name: mobilenetv3_large_100
+similarity_fn: cosine_similarity
+add_layer: True
+use_logits: True
+
+# Export
+output_path: '../saved_models/mobilenetv3_large_snn.onnx'   
+export_params: True 
+opset_version: 11   
+do_constant_folding: True 
+input_names: ['input_1', 'input_2'] 
+output_names: ['output']
