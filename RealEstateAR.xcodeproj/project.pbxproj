@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33492C082CC6DE150079C5F6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33492C072CC6DE150079C5F6 /* HomeView.swift */; };
 		3370D5AE2CB4F41800ADFCB1 /* RealEstateARApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3370D5AD2CB4F41800ADFCB1 /* RealEstateARApp.swift */; };
 		3370D5B02CB4F41800ADFCB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3370D5AF2CB4F41800ADFCB1 /* ContentView.swift */; };
 		3370D5B22CB4F41A00ADFCB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3370D5B12CB4F41A00ADFCB1 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33492C072CC6DE150079C5F6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3370D5AA2CB4F41800ADFCB1 /* RealEstateAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealEstateAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3370D5AD2CB4F41800ADFCB1 /* RealEstateARApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateARApp.swift; sourceTree = "<group>"; };
 		3370D5AF2CB4F41800ADFCB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				3370D5AD2CB4F41800ADFCB1 /* RealEstateARApp.swift */,
 				3370D5AF2CB4F41800ADFCB1 /* ContentView.swift */,
 				33C040082CBF59AF00ED2053 /* LoginView.swift */,
+				33492C072CC6DE150079C5F6 /* HomeView.swift */,
 				3370D5B12CB4F41A00ADFCB1 /* Assets.xcassets */,
 				3370D5B62CB4F41A00ADFCB1 /* Persistence.swift */,
 				3370D5B82CB4F41A00ADFCB1 /* RealEstateAR.xcdatamodeld */,
@@ -176,6 +179,7 @@
 				3370D5B72CB4F41A00ADFCB1 /* Persistence.swift in Sources */,
 				3370D5B02CB4F41800ADFCB1 /* ContentView.swift in Sources */,
 				3370D5BA2CB4F41A00ADFCB1 /* RealEstateAR.xcdatamodeld in Sources */,
+				33492C082CC6DE150079C5F6 /* HomeView.swift in Sources */,
 				33C040092CBF59AF00ED2053 /* LoginView.swift in Sources */,
 				3370D5AE2CB4F41800ADFCB1 /* RealEstateARApp.swift in Sources */,
 			);

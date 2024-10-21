@@ -5,6 +5,7 @@ import FirebaseAuth
 import Firebase
 
 struct LoginView: View {
+    @State private var isAuthenticated = false
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -13,23 +14,25 @@ struct LoginView: View {
     private var items: FetchedResults<Item>
 
     var body: some View {
-        VStack {
-            Text("AR Realtor")
-                .font(.largeTitle)
-        }
-        VStack(spacing: 50) {
-            HStack{
-                Text("Sign in with ")
-                Button(action: signInWithGoogle) {
-                    Image("google") // Use the name of your custom image
-                        .resizable()
-                        .frame(width: 50, height: 50) // Adjust the size of the image
+        if isAuthenticated {
+            HomeView()
+        } else {
+            VStack(spacing: 50) {
+                Text("AR Realtor")
+                    .font(.largeTitle)
+                HStack{
+                    Text("Sign in with ")
+                    Button(action: signInWithGoogle) {
+                        Image("google") // Use the name of your custom image
+                            .resizable()
+                            .frame(width: 50, height: 50) // Adjust the size of the image
+                    }
                 }
+                Image(systemName: "building")
+                    .resizable()
+                    .frame(width: 80, height: 120)
+                    .aspectRatio(contentMode: .fit)
             }
-            Image(systemName: "building")
-                .resizable()
-                .frame(width: 80, height: 120)
-                .aspectRatio(contentMode: .fit)
         }
     }
     
@@ -39,6 +42,8 @@ struct LoginView: View {
 
         // Create Google Sign In configuration object.
         let config = GIDConfiguration(clientID: clientID)
+        
+        GIDSignIn.sharedInstance.configuration = config
 
         // Start the sign-in flow using the root view controller.
         GIDSignIn.sharedInstance.signIn(withPresenting: getRootViewController()) { result, error in
@@ -61,6 +66,7 @@ struct LoginView: View {
                 if let error = error {
                     print("Firebase Auth error: \(error.localizedDescription)")
                 } else {
+                    self.isAuthenticated = true
                     print("Signed in with Google successfully")
                 }
             }
