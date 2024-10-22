@@ -10,18 +10,26 @@ import SwiftUI
 struct ContentView: View {
     
     @StateObject var viewModel = ContentViewModel()
-    @State var proceed: Bool = false
+    @State var proceed = false
     
     var body: some View {
         if proceed {
             if viewModel.isSignedIn && !viewModel.currentUserId.isEmpty {
-                MainView()
+                TabView {
+                    MainView()
+                        .tabItem {
+                            Label("Home", systemImage: "house")
+                        }
+                    ProfileView()
+                        .tabItem {
+                            Label("Profile", systemImage: "person.circle")
+                        }
+                }
             }
             else{
                 LoginView()
             }
-        }
-        else {
+        } else {
             EntryView(proceed: $proceed)
         }
     }

@@ -27,14 +27,14 @@ struct LoginView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 150, height: 150)
-                        .offset(y: loginView ? 0 : 240)
+                        .offset(y: loginView ? -125 : 150)
                         .animation(.easeInOut(duration: 1), value: loginView)
-                        .padding(.top, 24)
+                        .padding(.top, 150)
                     
                     Text("Login")
                         .font(.largeTitle)
                         .fontWeight(.bold)
-                        .padding(.top, 75)
+                        .padding(.top, -70)
                         .opacity(showTexts ? 1 : 0)
                         .animation(.easeInOut(duration: 0.75), value: showTexts)
                     
@@ -76,7 +76,36 @@ struct LoginView: View {
                             .cornerRadius(10)
                             .padding(.horizontal)
                     }
-                    .padding(.bottom, 80)
+                    .opacity(showTexts ? 1 : 0)
+                    .animation(.easeInOut(duration: 0.75), value: showTexts)
+                    
+                    // Reset password button
+                    NavigationLink("Forgot Password?", destination: PassResetView())
+                        .opacity(showTexts ? 1 : 0)
+                        .animation(.easeInOut(duration: 0.75), value: showTexts)
+                    
+                    HStack {
+                        VStack { Divider() }
+                        Text("or")
+                        VStack { Divider() }
+                    }
+                    .opacity(showTexts ? 1 : 0)
+                    .animation(.easeInOut(duration: 0.75), value: showTexts)
+                
+                    //Google-OAuth button
+                    Button(action: {
+                        // Login action
+                        Task {
+                            await loginViewModel.Glogin()
+                        }
+                    }) {
+                        Image("googleLogo")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 50, height: 50)
+                    }
+                    .clipShape(Circle())
+                    .shadow(radius: 2)
                     .opacity(showTexts ? 1 : 0)
                     .animation(.easeInOut(duration: 0.75), value: showTexts)
                     
@@ -91,10 +120,10 @@ struct LoginView: View {
                     .animation(.easeInOut(duration: 0.75), value: showTexts)
                 }
                 .onAppear {
-                    DispatchQueue.main.asyncAfter(deadline: .now()+0.25){
+                    DispatchQueue.main.asyncAfter(deadline: .now()+0.15){
                         loginView = true
                     }
-                    DispatchQueue.main.asyncAfter(deadline: .now()+1.25){
+                    DispatchQueue.main.asyncAfter(deadline: .now()+1.15){
                         showTexts = true
                     }
                     
