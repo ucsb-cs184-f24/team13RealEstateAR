@@ -2,23 +2,22 @@
 python3 convert_to_onnx.py ../configs/export_config.yaml
 '''
 
-import sys, os, torch, torch.onnx, logging
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+import logging
+
 from typing import List, Dict
 
 from alignment import H4ArgumentParser
+from configs.log_config import logger
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from configs.dataclasses import SNNArguments, ONNXExportArguments
 from src.models.configuration_SNN import SNN
 
 logger = logging.getLogger(__name__)
 
 def main():
-    logging.basicConfig(
-        format="%(asctime)s - %(levelname)s - %(name)s - %(message)s", 
-        datefmt="%Y-%m-%d %H:%M:%S", 
-        handlers=[logging.StreamHandler(sys.stdout)], 
-    )
     log_level = logging.INFO
     logger.setLevel(log_level)
     
