@@ -2,7 +2,7 @@
 //  RealEstate.swift
 //  RealEstate
 //
-//  Created by Angel Gutierrez Shah on 10/18/24.
+//  Created by Angel Gutierrez on 10/18/24.
 //
 
 import SwiftUI
