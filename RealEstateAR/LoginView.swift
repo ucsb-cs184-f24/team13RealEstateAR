@@ -1,8 +1,8 @@
 import SwiftUI
-import GoogleSignIn
+import Firebase
 import FirebaseCore
 import FirebaseAuth
-import Firebase
+import GoogleSignIn
 
 struct LoginView: View {
     @State private var isAuthenticated = false
@@ -18,67 +18,85 @@ struct LoginView: View {
             HomeView()
         } else {
             VStack(spacing: 50) {
-                VStack{
-                    Text("AR Realtor")
-                        .font(.largeTitle)
-                    HStack{
-                        Text("Sign in with ")
-                        Button(action: signInWithGoogle) {
-                            Image("google") // Use the name of your custom image
-                                .resizable()
-                                .frame(width: 50, height: 50) // Adjust the size of the image
-                        }
+                Button(action: googleSignIn) {
+                    HStack {
+                        Image(systemName: "globe")
+                            .resizable()
+                            .frame(width: 24, height: 24)
+                            .foregroundColor(.white)
+                        
+                        Text("Sign in with Google")
+                            .font(.headline)
+                            .foregroundColor(.white)
                     }
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(Color.black)
+                    .cornerRadius(10)
+                    .padding(.horizontal)
                 }
-                Image(systemName: "building")
-                    .resizable()
-                    .frame(width: 80, height: 120)
-                    .aspectRatio(contentMode: .fit)
             }
         }
     }
     
     
-    func signInWithGoogle() {
-        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+    func googleSignIn() {
+        // Ensure the Firebase client ID is available
+        guard let clientID = FirebaseApp.app()?.options.clientID else {
+            print("Error: Firebase client ID not found.")
+            return
+        }
 
-        // Create Google Sign In configuration object.
+        // Configure Google Sign-In with client ID
         let config = GIDConfiguration(clientID: clientID)
-        
         GIDSignIn.sharedInstance.configuration = config
 
-        // Start the sign-in flow using the root view controller.
+        // Start the Google Sign-In flow using the root view controller
         GIDSignIn.sharedInstance.signIn(withPresenting: getRootViewController()) { result, error in
-            guard error == nil else {
-                print("Error during Google Sign-In: \(error!.localizedDescription)")
+            if let error = error {
+                print("Google Sign-In error: \(error.localizedDescription)")
                 return
             }
 
+            // Ensure we have a valid user and ID token
             guard let user = result?.user,
                   let idToken = user.idToken?.tokenString else {
-                print("Error: Failed to get user or token.")
+                print("Error: Failed to get user or ID token.")
                 return
             }
 
-            let credential = GoogleAuthProvider.credential(withIDToken: idToken,
-                                                           accessToken: user.accessToken.tokenString)
+            // Access token is already non-optional, so no need for guard let
+            let accessToken = user.accessToken.tokenString
+
+            // Create a Firebase credential from Google ID and access tokens
+            let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: accessToken)
 
             // Sign in to Firebase with the credential
-            Auth.auth().signIn(with: credential) { result, error in
+            Auth.auth().signIn(with: credential) { authResult, error in
                 if let error = error {
                     print("Firebase Auth error: \(error.localizedDescription)")
-                } else {
-                    self.isAuthenticated = true
-                    print("Signed in with Google successfully")
+                    return
                 }
+
+                // Update authentication state
+                self.isAuthenticated = true
+                print("Signed in with Google successfully.")
             }
         }
     }
-
 
 
 
     func getRootViewController() -> UIViewController {
-        return UIApplication.shared.windows.first?.rootViewController ?? UIViewController()
+        guard let windowScene = UIApplication.shared.connectedScenes
+            .first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene,
+            let rootViewController = windowScene.windows.first(where: { $0.isKeyWindow })?.rootViewController else {
+                return UIViewController()
+        }
+        return rootViewController
     }
+}
+
+#Preview {
+    LoginView()
 }

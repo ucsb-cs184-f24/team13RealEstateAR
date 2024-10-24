@@ -1,37 +1,41 @@
-//
-//  HomeView.swift
-//  RealEstateAR
-//
-//  Created by Vedant Shah on 10/21/24.
-//
-
 import SwiftUI
-import FirebaseCore
 import FirebaseAuth
-import Firebase
 
 struct HomeView: View {
-    @State private var name = Auth.auth().currentUser?.displayName ?? "Unknown"
+    @State private var name = Auth.auth().currentUser?.displayName ?? "Guest"
     
     var body: some View {
         NavigationView {
-            VStack {
-                Text("Hello \(name)")
-                    .font(.largeTitle)
+            VStack(spacing: 30) {
+                VStack(alignment: .leading, spacing: 5) {
+                    Text("Hello,")
+                        .font(.system(size: 32, weight: .semibold, design: .rounded))
+                        .foregroundColor(.indigo)
+                    
+                    Text(name)
+                        .foregroundColor(.black.opacity(0.7))
+                }
+                .padding(.leading)
                 
-                NavigationLink(destination: CameraView()) {
-                    Text("Go to Camera")
-                        .font(.headline)
-                        .padding()
-                        .background(Color.blue)
+                Button(action: {
+                    PageView()
+                }) {
+                    Text("Button")
+                        .font(.system(size: 18, weight: .medium))
                         .foregroundColor(.white)
-                        .cornerRadius(10)
+                        .padding(.vertical, 15)
+                        .frame(maxWidth: .infinity)
+                        .background(Color.indigo)
+                        .cornerRadius(12)
+                        .shadow(radius: 5)
+                        .padding(.horizontal, 20)
                 }
             }
-            .navigationTitle("Home")
         }
     }
 }
+
+
 
 #Preview {
     HomeView()
