@@ -12,8 +12,13 @@
 * a change:
     - figure out CI/CD intergration plans
     - pair programming scheduling
+    - improve documentation
+    - branch organization
 * a measurement: 
     - the completion of minimum product with user interface, data pipeline, CI/CD setting up
+    - check at each class if everyone complete issue
+    - how organized documentation we have
+    - how many extra branch we have
 
 ## Optional
 
