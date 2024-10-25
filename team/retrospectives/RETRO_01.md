@@ -24,11 +24,11 @@
 ## Retro Assessment
 
 * A brief description of what retro outline or process you used.
-- We used the process of recording goal, change, and measurement.
+    - We used the process of recording goal, change, and measurement.
 * A brief assessment of how it went.
-- it went pretty well considering we had out retro meeting so late.
--     We did see a few more markdown files with documentation
--     We also saw saw much less unnesecary branches
+    - it went pretty well considering we had out retro meeting so late.
+    -     We did see a few more markdown files with documentation
+    -     We also saw saw much less unnesecary branches
 * What advice would you give to the next person leading a retro
   based on what you learned today?
-- I would advise the reto leader to avoid giving too much input in order to allow the team members to get their throughts down
+    - I would advise the reto leader to avoid giving too much input in order to allow the team members to get their throughts down
